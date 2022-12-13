@@ -42,7 +42,7 @@ CODEOWNERS = ["@jpeletier"]
 
 async def to_code(config):
 
-    cg.add_library("emelianov/modbus-esp8266", "4.1.0")
+    cg.add_library("hoffin/modbus-esp8266", "master")
     id = config[CONF_ID]
     uart = await cg.get_variable(config["uart_id"])
     server = cg.new_Pvariable(id)
